@@ -30,7 +30,7 @@
 - name: Download Plugings
   become: true
   with_items:
-    - src: "{{ Plugings }}"
+    src: "{{ Plugings }}"
 
 - name: Run Spigot
   become: true
