@@ -15,13 +15,12 @@
     mode: '0755'
 
 - name: Change directory
-  shell:
-    chdir:  "{{ working_dir }}"
+  command: "cd {{ working_dir }}"
 
 - name: Download BuildTools Jar
   get_url:
       url: "{{ BuildTools_jar }}"
-      dest:  "{{ working_dir }} + '/BuildTools.jar'"
+      dest: "{{ working_dir }} + '/BuildTools.jar'"
 
 - name: Install BuildTools
   become: true
