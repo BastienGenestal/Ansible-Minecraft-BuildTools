@@ -17,14 +17,9 @@
       url: "{{ BuildTools_jar }}"
       dest: "{{ working_dir }}/BuildTools.jar"
 
-- name: Install BuildTools
-  command: java -Xmx1G -Xms1G -jar BuildTools.jar nogui
-  args:
-    chdir: "{{ working_dir }}"
-
 - name: List Plugings
   debug:
-    msg: "An item: {{ item }}"
+    msg: "An item: {{ item.name }} with url : {{ item.url }}"
   with_items: "{{ Plugins }}"
 
 - name: Download Plugings
