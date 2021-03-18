@@ -22,29 +22,6 @@
   args:
     chdir: "{{ working_dir }}"
 
-- name: Ansible check for eula.txt file
-  ansible.builtin.stat:
-    path: "{{ working_dir }}/eula.txt"
-  register: eula_file
-
-- name: Add a line to a file if the file does not exist
-  ansible.builtin.lineinfile:
-    path: "{{ working_dir }}/eula.txt"
-    line: eula=true
-    create: yes
-  when: eula_file.stat.exists and eula_file.stat.isreg
-
-- name: Ansible check for server log file
-  ansible.builtin.stat:
-    path: "{{ working_dir }}/BuildTools.log.txt"
-  register: BuildToolsLogs
-
-- name: Re-try Install BuildTools
-  command: java -Xmx1G -Xms1G -jar BuildTools.jar nogui
-  args:
-    chdir: "{{ working_dir }}"
-  when: eula_file.stat.exists and eula_file.stat.isreg and BuildToolsLogs.stat.exists == false
-
 - name: List Plugings
   debug:
     msg: "An item: {{ item }}"
@@ -63,6 +40,19 @@
     owner: root
     group: root
     mode: 0644
+  notify: restart minecraft_server
+
+- name: Ansible check for eula.txt file
+  ansible.builtin.stat:
+    path: "{{ working_dir }}/eula.txt"
+  register: eula_file
+
+- name: Add a line to a file if the file does not exist
+  ansible.builtin.lineinfile:
+    path: "{{ working_dir }}/eula.txt"
+    line: eula=true
+    create: yes
+  when: eula_file.stat.exists and eula_file.stat.isreg
   notify: restart minecraft_server
 
 - name: Ensure Spigot is enabled on boot
