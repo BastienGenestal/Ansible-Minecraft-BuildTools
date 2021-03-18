@@ -1,0 +1,37 @@
+---
+
+- name: Install JRE
+  become: true
+  apt:
+    name: default-jre
+    state: present
+    update_cache: yes
+
+# Include variables and define needed variables.
+- name: Create a directory if it does not exist
+  ansible.builtin.file:
+    path: {{ working_dir }}
+    state: directory
+    mode: '0755'
+
+- name: Change directory
+  shell:
+    chdir:  {{ working_dir }}
+
+- name: Download BuildTools Jar
+  get_url:
+    - url: {{ BuildTools_jar }}
+      dest:  {{ working_dir }}/BuildTools.jar
+
+- name: Install BuildTools
+  become: true
+  command: java -Xmx1G -Xms1G -jar BuildTools.jar nogui
+
+- name: Download Plugings
+  become: true
+  with_items:
+    - src: {{ Plugings }}
+
+- name: Run Spigot
+  become: true
+  command: java -Xmx2048M -Xms2048M -jar spigot-1.16.5.jar nogui
