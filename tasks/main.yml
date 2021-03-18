@@ -16,7 +16,7 @@
 - name: Download BuildTools Jar
   get_url:
       url: "{{ BuildTools_jar }}"
-      dest: "{{ working_dir }} + '/BuildTools.jar'"
+      dest: "{{ working_dir }}/BuildTools.jar"
 
 - name: Install BuildTools
   command: >
