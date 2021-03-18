@@ -18,11 +18,6 @@
       url: "{{ BuildTools_jar }}"
       dest: "{{ working_dir }}/BuildTools.jar"
 
-- name: Install BuildTools
-  command: java -Xmx1G -Xms1G -jar BuildTools.jar nogui
-  args:
-    chdir: "{{ working_dir }}"
-
 - name: Add a line to a file if the file does not exist
   ansible.builtin.lineinfile:
     path: "{{ working_dir }}/eula.txt"
