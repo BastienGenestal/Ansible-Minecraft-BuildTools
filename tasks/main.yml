@@ -29,8 +29,8 @@
 
 - name: Download Plugings
   get_url:
-    url: "{{ item }}"
-    dest: "{{ working_dir }}/plugins"
+    url: "{{ item.url }}"
+    dest: "{{ working_dir }}/plugins/{{item.name}}.jar"
   with_items: "{{ Plugins }}"
 
 - name: Copy the minecraft_server systemd service file
