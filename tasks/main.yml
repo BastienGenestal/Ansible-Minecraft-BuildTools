@@ -27,6 +27,10 @@
   become: true
   command: java -Xmx1G -Xms1G -jar BuildTools.jar nogui
 
+- name: Download Plugings
+  become: true
+  with_items:
+    src: "{{ Plugings }}"
 
 - name: Run Spigot
   become: true
