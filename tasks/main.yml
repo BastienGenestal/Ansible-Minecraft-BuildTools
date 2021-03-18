@@ -32,13 +32,13 @@
 - name: List Plugings
   debug:
     var: "{{ item }}"
-  with_items: "{{ Plugins }}"
+  with_items: Plugins
 
 - name: Download Plugings
   get_url:
     url: "{{ item }}"
     dest: "{{ working_dir }}/plugins"
-  with_items: "{{ Plugins }}"
+  with_items: Plugins
 
 - name: Run Spigot
   command: java -Xmx2048M -Xms2048M -jar spigot-1.16.5.jar nogui
