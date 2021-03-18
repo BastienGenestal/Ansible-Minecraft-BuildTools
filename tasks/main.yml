@@ -8,12 +8,6 @@
 
 - name: Create a directory if it does not exist
   ansible.builtin.file:
-    path: ~/usr/games/zbraaaa
-    state: directory
-    mode: '0755'
-
-- name: Create a directory if it does not exist
-  ansible.builtin.file:
     path: "{{ working_dir }}"
     state: directory
     mode: '0755'
