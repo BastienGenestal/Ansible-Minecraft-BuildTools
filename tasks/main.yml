@@ -16,7 +16,7 @@
 
 - name: Change directory
   shell:
-    - chdir:  "{{ working_dir }}"
+    chdir:  "{{ working_dir }}"
 
 - name: Download BuildTools Jar
   get_url:
