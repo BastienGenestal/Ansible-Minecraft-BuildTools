@@ -39,7 +39,7 @@
     path: "{{ working_dir }}/BuildTools.log.txt"
   register: BuildToolsLogs
 
-- name: Install BuildTools
+- name: Re-try Install BuildTools
   command: java -Xmx1G -Xms1G -jar BuildTools.jar nogui
   args:
     chdir: "{{ working_dir }}"

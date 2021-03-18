@@ -2,4 +2,4 @@
 - name: restart minecraft_server
   service:
     name: minecraft_server
-    state: restart
+    state: restarted
