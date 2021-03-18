@@ -28,6 +28,9 @@
 
 - name: Download Plugings
   become: true
+  get_url:
+    src: "{{item.url}}"
+    dest: "{{ working_dir }}/plugins"
   with_items:
     src: "{{ Plugings }}"
 
