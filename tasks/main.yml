@@ -19,7 +19,7 @@
       dest: "{{ working_dir }}/BuildTools.jar"
 
 - name: Ansible check for eula.txt file
-    stat:
+    ansible.builtin.stat:
       path: "{{ working_dir }}/eula.txt"
     register: eula_file
 
@@ -31,7 +31,7 @@
   when: eula_file.stat.exists and eula_file.stat.isreg
 
 - name: Ansible check for server log file
-    stat:
+    ansible.builtin.stat:
       path: "{{ working_dir }}/BuildTools.log.txt"
     register: BuildToolsLogs
 
