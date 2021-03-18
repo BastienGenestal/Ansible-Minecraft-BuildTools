@@ -23,6 +23,7 @@
     - java -Xmx1G -Xms1G -jar BuildTools.jar nogui
     - echo "eula=true" > eula.txt
     - java -Xmx1G -Xms1G -jar BuildTools.jar nogui
+  chdir: "{{ working_dir }}"
 
 - name: Download Plugings
   get_url:
