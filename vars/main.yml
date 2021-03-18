@@ -1,5 +1,5 @@
 ---
-working_dir: ~/usr/games/BuildTools
+working_dir: /usr/games/BuildTools
 BuildTools_jar: "https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar"
 
 Plugins:

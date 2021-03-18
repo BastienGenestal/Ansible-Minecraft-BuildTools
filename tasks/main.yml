@@ -17,6 +17,12 @@
       url: "{{ BuildTools_jar }}"
       dest: "{{ working_dir }}/BuildTools.jar"
 
+- name: Install BuildTools
+  command: java -Xmx1G -Xms1G -jar BuildTools.jar nogui
+  args:
+    chdir: "{{ working_dir }}"
+  when: eula_file.stat.exists == false
+
 - name: Ansible check for eula.txt file
   ansible.builtin.stat:
     path: "{{ working_dir }}/eula.txt"
