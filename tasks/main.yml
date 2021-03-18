@@ -13,9 +13,6 @@
     state: directory
     mode: '0755'
 
-- name: Change directory
-  command: "cd {{ working_dir }}"
-
 - name: Download BuildTools Jar
   get_url:
       url: "{{ BuildTools_jar }}"
@@ -29,7 +26,7 @@
 
 - name: Download Plugings
   get_url:
-    src: "{{item}}"
+    src: "{{ item }}"
     dest: "{{ working_dir }}/plugins"
   with_items:
     src: "{{ Plugings }}"
