@@ -36,7 +36,7 @@
 
 - name: Download Plugings
   get_url:
-    src: "{{ item }}"
+    url: "{{ item }}"
     dest: "{{ working_dir }}/plugins"
   with_items:
     src: "{{ Plugings }}"
