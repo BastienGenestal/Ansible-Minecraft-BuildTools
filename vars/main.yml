@@ -3,5 +3,5 @@ working_dir: ~/usr/games/BuildTools
 BuildTools_jar: "https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar"
 
 Plugins:
-  - https://ci.ender.zone/job/EssentialsX/lastSuccessfulBuild/artifact/jars/EssentialsX-2.19.0-dev+96-1cf2b11.jar
+  - "https://ci.ender.zone/job/EssentialsX/lastSuccessfulBuild/artifact/jars/EssentialsX-2.19.0-dev+96-1cf2b11.jar"
 
