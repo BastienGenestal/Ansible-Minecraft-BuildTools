@@ -19,9 +19,9 @@
       dest: "{{ working_dir }}/BuildTools.jar"
 
 - name: Ansible check for eula.txt file
-    ansible.builtin.stat:
-      path: "{{ working_dir }}/eula.txt"
-    register: eula_file
+  ansible.builtin.stat:
+    path: "{{ working_dir }}/eula.txt"
+  register: eula_file
 
 - name: Add a line to a file if the file does not exist
   ansible.builtin.lineinfile:
@@ -31,9 +31,9 @@
   when: eula_file.stat.exists and eula_file.stat.isreg
 
 - name: Ansible check for server log file
-    ansible.builtin.stat:
-      path: "{{ working_dir }}/BuildTools.log.txt"
-    register: BuildToolsLogs
+  ansible.builtin.stat:
+    path: "{{ working_dir }}/BuildTools.log.txt"
+  register: BuildToolsLogs
 
 - name: Install BuildTools
   command: java -Xmx1G -Xms1G -jar BuildTools.jar nogui
