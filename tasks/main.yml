@@ -1,7 +1,6 @@
 ---
 
 - name: Install JRE
-  become: true
   apt:
     name: default-jre
     state: present
@@ -23,17 +22,17 @@
       dest: "{{ working_dir }} + '/BuildTools.jar'"
 
 - name: Install BuildTools
-  become: true
-  command: java -Xmx1G -Xms1G -jar BuildTools.jar nogui
+  command: >
+    - java -Xmx1G -Xms1G -jar BuildTools.jar nogui
+    - echo "eula=true" > eula.txt
+    - java -Xmx1G -Xms1G -jar BuildTools.jar nogui
 
 - name: Download Plugings
-  become: true
   get_url:
-    src: "{{item.url}}"
+    src: "{{item}}"
     dest: "{{ working_dir }}/plugins"
   with_items:
     src: "{{ Plugings }}"
 
 - name: Run Spigot
-  become: true
   command: java -Xmx2048M -Xms2048M -jar spigot-1.16.5.jar nogui
