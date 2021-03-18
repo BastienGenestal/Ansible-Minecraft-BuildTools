@@ -1,0 +1,13 @@
+[Unit]
+Description=Minecraft server with plugins
+After=network-online.target
+StartLimitInterval=0
+
+[Service]
+ExecStart= java -Xmx2048M -Xms2048M -jar {{ working_dir }}/spigot-1.16.5.jar nogui
+SyslogIdentifier=minecraft_server
+Restart=always
+RestartSec=1
+
+[Install]
+WantedBy=multi-user.target

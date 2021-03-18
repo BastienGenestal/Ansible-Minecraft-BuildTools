@@ -52,7 +52,17 @@
     dest: "{{ working_dir }}/plugins"
   with_items: "{{ Plugins }}"
 
-- name: Run Spigot
-  command: java -Xmx2048M -Xms2048M -jar spigot-1.16.5.jar nogui
-  args:
-    chdir: "{{ working_dir }}"
+- name: Copy the minecraft_server systemd service file
+  template:
+    src: minecraft_server.service.j2
+    dest: /etc/systemd/system/minecraft_server.service
+    owner: root
+    group: root
+    mode: 0644
+  notify: restart minecraft_server
+
+- name: Ensure Spigot is enabled on boot
+  systemd:
+    daemon_reload: true
+    name: minecraft_server
+    enabled: true
