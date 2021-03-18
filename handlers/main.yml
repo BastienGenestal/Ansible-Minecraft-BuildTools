@@ -1,5 +1,5 @@
 ---
-- name: restart minecraft server service
+- name: restart minecraft_server
   service:
     name: minecraft_server
     state: restart
