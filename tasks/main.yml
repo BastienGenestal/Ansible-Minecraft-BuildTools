@@ -18,19 +18,23 @@
       dest: "{{ working_dir }}/BuildTools.jar"
 
 - name: Check for a spigot file already compiled
-  stat:
-    path: "{{ working_dir }}/spigot*.jar"
+  find:
+    paths:
+      - "{{ working_dir }}"
+    patterns:
+      - "spigot*.jar"
   register: spigot
 
 - name: Does SPIGOT exist
-  command: echo "YES"
-  when: spigot.stat.exists == false
+  debug:
+    msg: "info isn't defined (path doesn't exist)"
+  when: spigot.files.exists == false
 
 - name: Install BuildTools
   command: java -Xmx1G -Xms1G -jar BuildTools.jar nogui
   args:
     chdir: "{{ working_dir }}"
-  when: spigot.stat.exists == false
+  when: spigot.files.exists == false
 
 - name: List Plugings
   debug:
