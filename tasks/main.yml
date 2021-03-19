@@ -26,7 +26,7 @@
   command: java -Xmx1G -Xms1G -jar BuildTools.jar nogui
   args:
     chdir: "{{ working_dir }}"
-  when: spigot.stat.exist == false
+  when: spigot.stat.exists == False
 
 - name: List Plugings
   debug:
