@@ -25,15 +25,6 @@
       - "spigot*.jar"
   register: spigot
 
-- name: SPIGOT value
-  debug:
-    msg: "{{ spigot.files }} "
-
-- name: spigot checker
-  debug:
-    msg: "{{ spigot.files }} exists !"
-  when: spigot.files.isreg
-
 - name: Does SPIGOT exist
   debug:
     msg: "{{ spigot.files }} isn't defined (path doesn't exist)"
@@ -43,7 +34,7 @@
   command: java -Xmx1G -Xms1G -jar BuildTools.jar nogui
   args:
     chdir: "{{ working_dir }}"
-  when: spigot.files.isreg
+  when: spigot.files and spigot.files[0].isreg
 
 - name: List Plugings
   debug:
