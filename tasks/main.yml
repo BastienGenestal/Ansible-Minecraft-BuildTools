@@ -43,8 +43,13 @@
 
 - name: rad checker
   debug:
-    msg: "{{ rad.files }} exists !"
-  when: rad.files.isreg
+    msg: "{{ rad }} exists !"
+  when: rad
+
+- name: rad checker file
+  debug:
+    msg: "{{ rad.files }} files exists !"
+  when: rad.files
 
 - name: spigot checker
   debug:
