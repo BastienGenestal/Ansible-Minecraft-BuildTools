@@ -22,6 +22,10 @@
     path: "{{ working_dir }}/spigot*.jar"
   register: spigot
 
+- name: Does SPIGOT exist
+  command: echo "YES"
+  when: spigot.stat.exists == False
+
 - name: Install BuildTools
   command: java -Xmx1G -Xms1G -jar BuildTools.jar nogui
   args:
