@@ -27,7 +27,7 @@
 
 - name: Does SPIGOT exist
   debug:
-    msg: "info isn't defined (path doesn't exist)"
+    msg: "{{ info.files }} isn't defined (path doesn't exist)"
   when: spigot.files.exists == false
 
 - name: Install BuildTools
