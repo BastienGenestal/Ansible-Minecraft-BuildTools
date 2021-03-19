@@ -25,6 +25,10 @@
       - "spigot*.jar"
   register: spigot
 
+- name: SPIGOT value
+  debug:
+    msg: "{{ info.files }} isn't defined (path doesn't exist)"
+
 - name: Does SPIGOT exist
   debug:
     msg: "{{ info.files }} isn't defined (path doesn't exist)"
