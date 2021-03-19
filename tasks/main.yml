@@ -62,3 +62,5 @@
     daemon_reload: true
     name: minecraft_server
     enabled: true
+  args:
+    chdir: "{{ working_dir }}"
