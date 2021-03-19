@@ -6,7 +6,7 @@
     state: present
     update_cache: yes
 
-- name: Create a directory if it does not exist
+- name: Create a working directory if it does not exist
   ansible.builtin.file:
     path: "{{ working_dir }}"
     state: directory
@@ -26,6 +26,12 @@
   debug:
     msg: "An item: {{ item.name }} with url : {{ item.url }}"
   with_items: "{{ Plugins }}"
+
+- name: Create a plugins directory if it does not exist
+  ansible.builtin.file:
+    path: "{{ working_dir }}/plugins"
+    state: directory
+    mode: '0755'
 
 - name: Download Plugings
   get_url:
