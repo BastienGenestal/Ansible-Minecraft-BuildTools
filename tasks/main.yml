@@ -37,7 +37,7 @@
 - name: Does SPIGOT exist
   debug:
     msg: "{{ spigot.files }} isn't defined (path doesn't exist)"
-  when:  spigot.files[0].isreg
+  when:  spigot.files.isreg
 
 - name: Install BuildTools
   command: java -Xmx1G -Xms1G -jar BuildTools.jar nogui
