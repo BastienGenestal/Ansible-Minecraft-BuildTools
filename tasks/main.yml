@@ -18,7 +18,7 @@
       dest: "{{ working_dir }}/BuildTools.jar"
 
 - name: Install BuildTools
-  command: java -Xmx1G -Xms1G -jar BuildTools.jar nogui
+  command: java -jar BuildTools.jar
   args:
     chdir: "{{ working_dir }}"
 
