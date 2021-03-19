@@ -3,5 +3,3 @@
   service:
     name: minecraft_server
     state: restarted
-  args:
-    chdir: "{{ working_dir }}"
