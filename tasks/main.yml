@@ -27,7 +27,19 @@
 
 - name: SPIGOT value
   debug:
-    msg: "{{ spigot.files }} isn't defined (path doesn't exist)"
+    msg: "{{ spigot.files }} "
+
+- name: Check for a rad file already compiled
+  find:
+    paths:
+      - "{{ working_dir }}"
+    patterns:
+      - "radd*dzd.jar"
+  register: rad
+
+- name: rad value
+  debug:
+    msg: "{{ rad.files }}"
 
 - name: Does SPIGOT exist
   debug:
