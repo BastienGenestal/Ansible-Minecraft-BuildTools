@@ -29,28 +29,6 @@
   debug:
     msg: "{{ spigot.files }} "
 
-- name: Check for a rad file already compiled
-  find:
-    paths:
-      - "{{ working_dir }}"
-    patterns:
-      - "radd*dzd.jar"
-  register: rad
-
-- name: rad value
-  debug:
-    msg: "{{ rad.files }}"
-
-- name: rad checker
-  debug:
-    msg: "{{ rad }} exists !"
-  when: rad
-
-- name: rad checker file
-  debug:
-    msg: "{{ rad.files }} files exists !"
-  when: rad.files
-
 - name: spigot checker
   debug:
     msg: "{{ spigot.files }} exists !"
@@ -59,7 +37,7 @@
 - name: Does SPIGOT exist
   debug:
     msg: "{{ spigot.files }} isn't defined (path doesn't exist)"
-  when: spigot.files.exists == false
+  when: spigot.files and spigot.files.isreg
 
 - name: Install BuildTools
   command: java -Xmx1G -Xms1G -jar BuildTools.jar nogui
