@@ -29,7 +29,7 @@
   command: java -Xmx1G -Xms1G -jar BuildTools.jar nogui
   args:
     chdir: "{{ working_dir }}"
-  when: !spigot.files
+  when: spigot.files == []
 
 - name: List Plugings
   debug:
