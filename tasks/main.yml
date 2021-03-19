@@ -24,13 +24,13 @@
 
 - name: Does SPIGOT exist
   command: echo "YES"
-  when: spigot.stat.exists == False
+  when: spigot.stat.exists == false
 
 - name: Install BuildTools
   command: java -Xmx1G -Xms1G -jar BuildTools.jar nogui
   args:
     chdir: "{{ working_dir }}"
-  when: spigot.stat.exists == False
+  when: spigot.stat.exists == false
 
 - name: List Plugings
   debug:
