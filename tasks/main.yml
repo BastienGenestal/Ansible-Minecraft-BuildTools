@@ -38,7 +38,7 @@
 
 - name: List Local_Plugins
   debug:
-    msg: "An item: {{ item.name }} with url : {{ item.url }}"
+    msg: "An item: {{ item.name }} with url : {{ item.path }}"
   with_items: "{{ Copy_Plugins }}"
 
 - name: Create a plugins directory if it does not exist
