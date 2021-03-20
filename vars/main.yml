@@ -10,5 +10,5 @@ Copy_Plugins:
   - { name: "WorldEdit", path: "worldedit-bukkit-7.2.4.jar" }
   - { name: "WorldGuard", path: "worldguard-bukkit-7.0.4.jar" }
   - { name: "FAWE", path: "FastAsyncWorldEdit-1.16-626.jar" }
-  - { name: "mcMMO", path: "mcMMO.jar" }
+  - { name: "Jobs", path: "Jobs.jar" }
 
