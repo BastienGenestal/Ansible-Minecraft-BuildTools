@@ -66,7 +66,6 @@
     owner: root
     group: root
     mode: 0644
-  notify: restart minecraft_server socket
 
 - name: Copy the minecraft_server systemd service file
   template:
@@ -76,7 +75,7 @@
     group: root
     mode: 0644
 
-- name: Copy the minecraft_server systemd service file
+- name: Copy the eula.txt file
   template:
     src: eula.txt
     dest:  "{{ working_dir }}/eula.txt"

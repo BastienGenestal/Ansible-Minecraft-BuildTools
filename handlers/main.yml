@@ -1,10 +1,7 @@
 ---
 - name: restart minecraft_server
   service:
-    name: minecraft_server
-    state: restarted
-
-- name: restart minecraft_server socket
-  service:
-    name: minecraft_server.socket
+    name:
+      - minecraft_server
+      - minecraft_server.socket
     state: restarted
