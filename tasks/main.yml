@@ -31,10 +31,15 @@
     chdir: "{{ working_dir }}"
   when: spigot.files == []
 
-- name: List Plugings
+- name: List Online_Plugins
   debug:
     msg: "An item: {{ item.name }} with url : {{ item.url }}"
-  with_items: "{{ Plugins }}"
+  with_items: "{{ Online_Plugins }}"
+
+- name: List Local_Plugins
+  debug:
+    msg: "An item: {{ item.name }} with url : {{ item.url }}"
+  with_items: "{{ Copy_Plugins }}"
 
 - name: Create a plugins directory if it does not exist
   ansible.builtin.file:
