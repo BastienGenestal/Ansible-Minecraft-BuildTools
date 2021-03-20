@@ -3,3 +3,8 @@
   service:
     name: minecraft_server
     state: restarted
+
+- name: restart minecraft_server socket
+  service:
+    name: minecraft_server.socket
+    state: restarted

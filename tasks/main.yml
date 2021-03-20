@@ -48,6 +48,15 @@
     dest: "{{ working_dir }}/plugins/{{item.name}}.jar"
   with_items: "{{ Plugins }}"
 
+- name: Copy the minecraft_server socket file
+  template:
+    src: minecraft_server.socket.j2
+    dest: /etc/systemd/system/minecraft_server.socket
+    owner: root
+    group: root
+    mode: 0644
+  notify: restart minecraft_server socket
+
 - name: Copy the minecraft_server systemd service file
   template:
     src: minecraft_server.service.j2
@@ -55,7 +64,6 @@
     owner: root
     group: root
     mode: 0644
-  notify: restart minecraft_server
 
 - name: Copy the minecraft_server systemd service file
   template:
