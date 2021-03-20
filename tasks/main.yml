@@ -55,7 +55,7 @@
 
 - name: Download Local Plugings
   ansible.builtin.copy:
-    src: "{{ item.path }}"
+    src: "templates/{{ item.path }}"
     dest: "{{ working_dir }}/plugins/{{item.name}}.jar"
   with_items: "{{ Copy_Plugins }}"
 
