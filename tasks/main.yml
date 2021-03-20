@@ -55,7 +55,7 @@
 
 - name: Download Local Plugings
   template:
-    src: "{{ item.url }}"
+    src: "{{ item.path }}"
     dest: "{{ working_dir }}/plugins/{{item.name}}.jar"
   with_items: "{{ Copy_Plugins }}"
 
