@@ -48,14 +48,14 @@
     mode: '0755'
 
 - name: Download Online Plugings
-  template:
-    src: "{{ item.url }}"
+  get_url:
+    url: "{{ item.url }}"
     dest: "{{ working_dir }}/plugins/{{item.name}}.jar"
   with_items: "{{ Online_Plugins }}"
 
 - name: Download Local Plugings
-  get_url:
-    url: "{{ item.url }}"
+  template:
+    src: "{{ item.url }}"
     dest: "{{ working_dir }}/plugins/{{item.name}}.jar"
   with_items: "{{ Copy_Plugins }}"
 
