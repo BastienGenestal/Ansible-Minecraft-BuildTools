@@ -3,11 +3,11 @@ working_dir: /usr/games/BuildTools
 BuildTools_jar: "https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar"
 
 Online_Plugins:
-  - { name: "Essential", url: "https://ci.ender.zone/job/EssentialsX/lastSuccessfulBuild/artifact/jars/EssentialsX-2.19.0-dev+96-1cf2b11.jar"}
-  - { name: "LuckPerms", url: "https://ci.lucko.me/job/LuckPerms/1307/artifact/bukkit/loader/build/libs/LuckPerms-Bukkit-5.3.9.jar"}
+  - { name: "Essential", url: "https://ci.ender.zone/job/EssentialsX/lastSuccessfulBuild/artifact/jars/EssentialsX-2.19.0-dev+99-1e0d7fb.jar"}
+  - { name: "Essential Antibuild", url: "https://ci.ender.zone/job/EssentialsX/lastSuccessfulBuild/artifact/jars/EssentialsXAntiBuild-2.19.0-dev+99-1e0d7fb.jar"}
+  - { name: "Essential Protect", url: "https://ci.ender.zone/job/EssentialsX/lastSuccessfulBuild/artifact/jars/EssentialsXProtect-2.19.0-dev+99-1e0d7fb.jar"}
 
 Copy_Plugins:
-  - { name: "WorldGuard", path: "worldguard-bukkit-7.0.4.jar" }
   - { name: "FAWE", path: "FastAsyncWorldEdit-1.16-626.jar" }
   - { name: "Jobs", path: "Jobs.jar" }
 
