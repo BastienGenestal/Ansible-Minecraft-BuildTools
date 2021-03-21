@@ -7,7 +7,6 @@ Online_Plugins:
   - { name: "LuckPerms", url: "https://ci.lucko.me/job/LuckPerms/1307/artifact/bukkit/loader/build/libs/LuckPerms-Bukkit-5.3.9.jar"}
 
 Copy_Plugins:
-  - { name: "WorldEdit", path: "worldedit-bukkit-7.2.4.jar" }
   - { name: "WorldGuard", path: "worldguard-bukkit-7.0.4.jar" }
   - { name: "FAWE", path: "FastAsyncWorldEdit-1.16-626.jar" }
   - { name: "Jobs", path: "Jobs.jar" }
