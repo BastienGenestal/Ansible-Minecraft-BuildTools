@@ -10,4 +10,6 @@ Online_Plugins:
 Copy_Plugins:
   - { name: "FAWE", path: "FastAsyncWorldEdit-1.16-626.jar" }
   - { name: "Jobs", path: "Jobs.jar" }
+  - { name: "Essential Chat", path: "EssentialsXChat.jar"}
+  - { name: "Essential Spawn", path: "EssentialsXSpawn.jar"}
 

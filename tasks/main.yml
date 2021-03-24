@@ -59,6 +59,11 @@
     dest: "{{ working_dir }}/plugins/{{item.name}}.jar"
   with_items: "{{ Copy_Plugins }}"
 
+- name: Copy the config.yml file
+  template:
+    src: config.yml
+    dest: "{{ working_dir }}/plugins/Essentials/config.yml"
+
 - name: Copy the minecraft_server socket file
   template:
     src: minecraft_server.socket.j2
