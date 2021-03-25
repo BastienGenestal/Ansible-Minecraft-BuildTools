@@ -69,6 +69,11 @@
     src: jobs_config.yml
     dest: "{{ working_dir }}/plugins/Jobs/generalConfig.yml"
 
+- name: Copy the jobs config.yml file
+  template:
+    src: worldguard_regions_config.yml
+    dest: "{{ working_dir }}/plugins/WorldGuard/worlds/world/region.yml"
+
 - name: Copy the minecraft_server socket file
   template:
     src: minecraft_server.socket.j2
