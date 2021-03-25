@@ -24,7 +24,7 @@
 
 # A color code between 0-9 or a-f. Set to 'none' to disable.
 # In 1.16+ you can use hex color codes here as well. (For example, #613e1d is brown).
-ops-name-color: '5'
+ops-name-color: 'a'
 
 # The character(s) to prefix all nicknames, so that you know they are not true usernames.
 nickname-prefix: '~'
@@ -448,7 +448,7 @@ auto-afk-kick: -1
 # Other players or monsters can't push the player out of AFK mode then.
 # This will also enable temporary god mode for the AFK player.
 # The player has to use the command /afk to leave the AFK mode.
-freeze-afk-players: false
+freeze-afk-players: true
 
 # When the player is AFK, should he be able to pickup items?
 # Enable this, when you don't want people idling in mob traps.
@@ -507,8 +507,8 @@ allow-silent-join-quit: false
 # You can set custom join and quit messages here. Set this to "none" to use the default Minecraft message,
 # or set this to "" to hide the message entirely.
 # You may use color codes, {USERNAME} for the player's name, and {PLAYER} for the player's displayname.
-custom-join-message: "none"
-custom-quit-message: "none"
+custom-join-message: "&4[&a&o+&4] $7{USERNAME}"
+custom-quit-message: "&4[&c&o-&4] $7{USERNAME}"
 
 # Should Essentials override the vanilla "Server Full" message with its own from the language file?
 # Set to false to keep the vanilla message.
@@ -546,11 +546,11 @@ repair-enchanted: true
 
 # Allow 'unsafe' enchantments in kits and item spawning.
 # Warning: Mixing and overleveling some enchantments can cause issues with clients, servers and plugins.
-unsafe-enchantments: false
+unsafe-enchantments: true
 
 #Do you want Essentials to keep track of previous location for /back in the teleport listener?
 #If you set this to true any plugin that uses teleport will have the previous location registered.
-register-back-in-listener: false
+register-back-in-listener: true
 
 #Delay to wait before people can cause attack damage after logging in.
 login-attack-delay: 5
@@ -634,7 +634,7 @@ allow-selling-named-items: false
 delay-motd: 0
 
 # A list of commands that should have their complementary confirm commands enabled by default.
-# This is empty by default, for the latest list of valid commands see the latest source config.yml.
+# This is empty by default, for the latest list of valid commands see the latest source essantials_config.yml.
 default-enabled-confirm-commands:
 #- pay
 #- clearinventory
@@ -759,7 +759,7 @@ max-money: 10000000000000
 
 # Set the minimum amount of money a player can have (must be above the negative of max-money).
 # Setting this to 0, will disable overdrafts/loans completely.  Users need 'essentials.eco.loan' perm to go below 0.
-min-money: -10000
+min-money: 0
 
 # Enable this to log all interactions with trade/buy/sell signs and sell command.
 economy-log-enabled: false
@@ -769,7 +769,7 @@ economy-log-enabled: false
 economy-log-update-enabled: false
 
 # Minimum acceptable amount to be used in /pay.
-minimum-pay-amount: 0.001
+minimum-pay-amount: 1
 
 # Enable this to block users who try to /pay another user which ignore them.
 pay-excludes-ignore-list: false

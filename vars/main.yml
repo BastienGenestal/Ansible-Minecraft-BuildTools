@@ -12,4 +12,6 @@ Copy_Plugins:
   - { name: "Jobs", path: "Jobs.jar" }
   - { name: "Essential Chat", path: "EssentialsXChat.jar"}
   - { name: "Essential Spawn", path: "EssentialsXSpawn.jar"}
+  - { name: "ChestShop", path: "ChestShop.jar"}
+  - { name: "Worldguard", path: "worldguard-bukkit-7.0.4.jar"}
 
