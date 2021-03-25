@@ -507,8 +507,8 @@ allow-silent-join-quit: false
 # You can set custom join and quit messages here. Set this to "none" to use the default Minecraft message,
 # or set this to "" to hide the message entirely.
 # You may use color codes, {USERNAME} for the player's name, and {PLAYER} for the player's displayname.
-custom-join-message: "&4[&a&o+&4] $7{USERNAME}"
-custom-quit-message: "&4[&c&o-&4] $7{USERNAME}"
+custom-join-message: "&4[&a&o+&4] &7{USERNAME}"
+custom-quit-message: "&4[&c&o-&4] &7{USERNAME}"
 
 # Should Essentials override the vanilla "Server Full" message with its own from the language file?
 # Set to false to keep the vanilla message.
