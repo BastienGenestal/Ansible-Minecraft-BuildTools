@@ -18,7 +18,7 @@ regions:
         flags: {
           pvp: deny,
           mob-damage: deny,
-          mob-spawning: deny
+          mob-spawning: deny,
           creeper-explosion: deny,
           ghast-fireball: deny,
           other-explosion: deny,
