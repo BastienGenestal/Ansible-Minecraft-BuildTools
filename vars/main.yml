@@ -12,6 +12,7 @@ Copy_Plugins:
   - { name: "Essential Spawn", path: "EssentialsXSpawn.jar"}
   - { name: "FAWE", path: "FastAsyncWorldEdit-1.16-626.jar" }
   - { name: "Worldguard", path: "worldguard-bukkit-7.0.4.jar"}
+  - { name: "Vault", path: "Vault.jar"}
   - { name: "Jobs", path: "Jobs.jar" }
   - { name: "ChestShop", path: "ChestShop.jar"}
 
