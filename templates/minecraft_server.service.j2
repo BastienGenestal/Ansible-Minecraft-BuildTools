@@ -8,6 +8,7 @@ WorkingDirectory={{ working_dir }}
 
 Sockets=minecraft_server.socket
 StandardInput=socket
+NonBlocking=true
 
 ExecStart=java -Xmx1G -Xms1G -jar {{ working_dir }}/spigot-1.16.5.jar nogui
 SyslogIdentifier=minecraft_server
