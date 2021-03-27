@@ -8,10 +8,12 @@ Online_Plugins:
   - { name: "Essential Protect", url: "https://ci.ender.zone/job/EssentialsX/lastSuccessfulBuild/artifact/jars/EssentialsXProtect-2.19.0-dev+99-1e0d7fb.jar"}
 
 Copy_Plugins:
-  - { name: "FAWE", path: "FastAsyncWorldEdit-1.16-626.jar" }
-  - { name: "Jobs", path: "Jobs.jar" }
   - { name: "Essential Chat", path: "EssentialsXChat.jar"}
   - { name: "Essential Spawn", path: "EssentialsXSpawn.jar"}
-  - { name: "ChestShop", path: "ChestShop.jar"}
+  - { name: "FAWE", path: "FastAsyncWorldEdit-1.16-626.jar" }
   - { name: "Worldguard", path: "worldguard-bukkit-7.0.4.jar"}
+  - { name: "Jobs", path: "Jobs.jar" }
+  - { name: "ChestShop", path: "ChestShop.jar"}
+
+
 

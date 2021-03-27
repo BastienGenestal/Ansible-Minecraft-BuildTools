@@ -55,24 +55,9 @@
 
 - name: Download Local Plugings
   ansible.builtin.copy:
-    src: "templates/{{ item.path }}"
+    src: "plugins/{{ item.path }}"
     dest: "{{ working_dir }}/plugins/{{item.name}}.jar"
   with_items: "{{ Copy_Plugins }}"
-
-- name: Copy the essentials config.yml file
-  template:
-    src: essantials_config.yml
-    dest: "{{ working_dir }}/plugins/Essentials/config.yml"
-
-- name: Copy the jobs config.yml file
-  template:
-    src: jobs_config.yml
-    dest: "{{ working_dir }}/plugins/Jobs/generalConfig.yml"
-
-- name: Copy the jobs config.yml file
-  template:
-    src: worldguard_regions_config.yml
-    dest: "{{ working_dir }}/plugins/WorldGuard/worlds/world/regions.yml"
 
 - name: Copy the minecraft_server socket file
   template:
@@ -91,12 +76,15 @@
     mode: 0644
 
 - name: Copy the eula.txt file
-  template:
-    src: eula.txt
+  ansible.builtin.copy:
+    src: "src_files/eula.txt"
     dest:  "{{ working_dir }}/eula.txt"
     owner: root
     group: root
     mode: 0644
+
+- name: Import config files
+  import_tasks: imports.yml
   notify: restart minecraft_server
 
 - name: Ensure Spigot is enabled on boot

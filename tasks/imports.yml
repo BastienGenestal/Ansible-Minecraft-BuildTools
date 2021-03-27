@@ -1,0 +1,21 @@
+---
+
+- name: Copy the essentials config.yml file
+  ansible.builtin.copy:
+    src: "src_files/essantials_config.yml"
+    dest: "{{ working_dir }}/plugins/Essentials/config.yml"
+
+- name: Copy the jobs config.yml file
+  ansible.builtin.copy:
+    src: "src_files/jobs_config.yml"
+    dest: "{{ working_dir }}/plugins/Jobs/generalConfig.yml"
+
+- name: Copy the jobs config.yml file
+  ansible.builtin.copy:
+    src: "src_files/worldguard_regions_config.yml"
+    dest: "{{ working_dir }}/plugins/WorldGuard/worlds/world/regions.yml"
+
+- name: Copy the server pp file
+  ansible.builtin.copy:
+    src: "src_files/server_pp"
+    dest: "{{ working_dir }}/server-icon.png"
