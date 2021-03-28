@@ -24,3 +24,8 @@
   ansible.builtin.copy:
     src: "src_files/server_pp"
     dest: "{{ working_dir }}/server-icon.png"
+
+- name: Copy the server permissions file
+  ansible.builtin.copy:
+    src: "src_files/permissions.yml"
+    dest: "{{ working_dir }}/permissions.yml"
