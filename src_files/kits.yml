@@ -1,0 +1,58 @@
+# EssentialsX kit configuration.
+# If you don't have any kits defined in this file, the plugin will try to copy them from the config.yml
+#
+# Note: All items MUST be followed by a quantity!
+# All kit names should be lower case, and will be treated as lower in permissions/costs.
+# Syntax: - name[:durability] amount [enchantment:level]... [itemmeta:value]...
+# For Item Meta information visit http://wiki.ess3.net/wiki/Item_Meta
+# To make the kit execute a command, add /<command> to the items list. Use {USERNAME} to specify the player receiving the kit.
+# {PLAYER} will show the player's displayname instead of username.
+# 'delay' refers to the cooldown between how often you can use each kit, measured in seconds.
+# Set delay to -1 for a one time kit.
+# For more information, visit http://wiki.ess3.net/wiki/Kits
+kits:
+  Start:
+    delay: 604800
+    items:
+    - wooden_sword 1 damage_undead:10 fire_aspect:5 loot_bonus_mobs:1 sweeping_edge:50
+    - iron_pickaxe 1 dig_speed:10 durability:1 loot_bonus_blocks:2
+    - iron_axe 1 dig_speed:10 durability:1 loot_bonus_blocks:2
+    - iron_shovel 1 durability:1 dig_speed:10 silk_touch:1
+    - compass 1
+    - acacia_boat 1
+    - acacia_log 16
+    - strong_swiftness_potion 1
+    - pumpkin_pie 32
+    - chest 2
+    - strong_swiftness_potion 1
+    - experience_bottle 64
+    - chainmail_boots 1 protection_environmental:5 protection_fall:1 thorns:1 soul_speed:1
+      depth_strider:3
+    - chainmail_leggings 1 protection_environmental:5
+    - chainmail_chestplate 1 protection_environmental:5
+    - chainmail_helmet 1 protection_environmental:5 water_worker:1
+  daily_diamond_block:
+    delay: 86400
+    items:
+    - diamond_block 1
+  two_weeks_netherite:
+    delay: 604800
+    items:
+    - netherite_scrap 1
+  Horse:
+    delay: 100000000000000000
+    items:
+    - leather_horse_armor 1
+    - saddle 1
+    - acacia_fence 1
+    - lead 1
+    - horse_spawn_egg 1
+    - wheat 32
+    - jungle_boat 1
+  Dog:
+    delay: 100000000000000000
+    items:
+    - bone 16
+    - wolf_spawn_egg 1
+    - magenta_dye 1
+    - name_tag 1 name:doggo
