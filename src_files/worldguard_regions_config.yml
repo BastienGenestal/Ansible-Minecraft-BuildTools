@@ -74,3 +74,64 @@ regions:
         owners: {}
         type: cuboid
         priority: 0
+    warzone:
+        min: {x: 82, y: 0, z: 2}
+        max: {x: 123, y: 255, z: 37}
+        members: {}
+        flags: {
+          enderpearl: deny,
+          pvp: allow,
+          mob-damage: allow,
+          ghast-fireball: allow,
+          fire-spread: deny,
+          enderman-grief: deny,
+          snowman-trails: deny,
+          entity-painting-destroy: deny,
+          entity-item-frame-destroy: deny,
+          lava-fire: deny,
+          lightning: deny,
+          water-flow: allow,
+          lava-flow: allow,
+          snow-fall: deny,
+          snow-melt: deny,
+          ice-form: deny,
+          ice-melt: deny,
+          frosted-ice: deny,
+          mushroom-growth: deny,
+          leaf-decay: deny,
+          grass-growth: deny,
+          mycelium-spread: deny,
+          vine-growth: deny,
+          crop-growth: deny,
+          soil-dry: deny,
+          coral-fade: deny,
+          pistons: allow,
+          build: deny,
+          interact: allow,
+          block-break: deny,
+          block-place: deny,
+          use: allow,
+          damage-animals: allow,
+          chest-access: allow,
+          ride: allow,
+          sleep: deny,
+          respawn-anchors: deny,
+          tnt: deny,
+          vehicle-place: deny,
+          vehicle-destroy: deny,
+          lighter: allow,
+          block-trampling: deny,
+          frosted-ice-form: deny,
+          item-frame-rotation: deny,
+          firework-damage: deny,
+          invincible: deny,
+          heal-delay: 0,
+          heal-amount: 0,
+          feed-delay: 0,
+          feed-amount: 0,
+          greeting-title: §3Spawn,
+          farewell-title: §2Wilderness,
+        }
+        owners: {}
+        type: cuboid
+        priority: 0

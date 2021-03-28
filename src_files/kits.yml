@@ -40,7 +40,7 @@ kits:
     items:
     - netherite_scrap 1
   Horse:
-    delay: 100000000000000000
+    delay: -1
     items:
     - leather_horse_armor 1
     - saddle 1
@@ -50,7 +50,7 @@ kits:
     - wheat 32
     - jungle_boat 1
   Dog:
-    delay: 100000000000000000
+    delay: -1
     items:
     - bone 16
     - wolf_spawn_egg 1
