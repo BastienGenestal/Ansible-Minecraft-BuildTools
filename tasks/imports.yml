@@ -15,6 +15,11 @@
     src: "src_files/worldguard_regions_config.yml"
     dest: "{{ working_dir }}/plugins/WorldGuard/worlds/world/regions.yml"
 
+- name: Copy the Luckperms config.yml file
+  ansible.builtin.copy:
+    src: "src_files/luckperms_config.yml"
+    dest: "{{ working_dir }}/plugins/LuckPerms/config.yml"
+
 - name: Copy the server.properties file
   ansible.builtin.copy:
     src: "src_files/server.properties"
