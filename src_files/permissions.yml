@@ -1,0 +1,59 @@
+groups:
+  default:
+    default: true
+    permissions:
+    - essentials.home
+    - essentials.r
+    - essentials.nether
+    - essentials.afk
+    - essentials.ignore
+    - essentials.tpdeny
+    - essentials.suicide
+    - essentials.mail.send
+    - essentials.help
+    - essentials.pm
+    - essentials.mail
+    - essentials.rules
+    - essentials.warp.spawn
+    - essentials.tpa
+    - essentials.warp
+    - essentials.tpaccept
+    - essentials.balance
+    - essentials.balancetop
+    - essentials.pay
+    - essentials.worth
+    - essentials.tpacancel
+    - essentials.sell
+    - essentials.motd
+    - essentials.msg
+    - essentials.money
+    - essentials.help
+    - essentials.sell.hand
+    - essentials.warps
+  Admin:
+    permissions:
+    - essentials.give
+    - essentials.god
+    - essentials.ci
+    - essentials.tpa
+    - essentials.tp
+    - essentials.feed
+    - essentials.ext
+    - essentials.gmc
+    - essentials.gm
+    - essentials.gms
+    - essentials.mute
+    - essentials.announce
+    - essentials.heal
+    - essentials.burn
+    - essentials.tempban
+    - essentials.ban
+    - essentials.kick
+    - essentials.warp
+    - essentials.vanish
+    - essentials.invsee
+    - essentials.fly
+    - essentials.*
+    schema-version: 1
+users:
+schema-version: 1
