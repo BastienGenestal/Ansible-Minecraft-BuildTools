@@ -412,9 +412,8 @@ list:
     # To limit groups, set a max user limit
     #builder: 20
     # To hide groups, set the group as hidden
-    #default: hidden
     # Uncomment the line below to simply list all players with no grouping
-    #Players: '*'
+    Players: '*'
 
 # Displays real names in /list next to players who are using a nickname.
 real-names-on-list: false
@@ -825,7 +824,7 @@ chat:
   # For more information of chat formatting, check out the wiki: http://wiki.ess3.net/wiki/Chat_Formatting
   # Note: Using the {PREFIX} and {SUFFIX} placeholders along with {DISPLAYNAME} may cause double prefixes/suffixes to be shown in chat unless add-prefix-suffix is uncommented and set to false.
 
-  format: '<{DISPLAYNAME}> {MESSAGE}'
+  format: '{DISPLAYNAME}: {MESSAGE}'
   #format: '&7[{GROUP}]&r {DISPLAYNAME}&7:&r {MESSAGE}'
   #format: '&7{PREFIX}&r {DISPLAYNAME}&r &7{SUFFIX}&r: {MESSAGE}'
 
@@ -1089,7 +1088,7 @@ respawn-at-home-bed: true
 respawn-at-anchor: false
 
 # Teleport all joining players to the spawnpoint
-spawn-on-join: false
+spawn-on-join: true
 # The following value of `guests` states that all players in group `guests` will be teleported to spawn when joining.
 #spawn-on-join: guests
 # The following list value states that all players in group `guests` and `admin` are to be teleported to spawn when joining. 
