@@ -6,6 +6,7 @@ Online_Plugins:
   - { name: "Essential", url: "https://ci.ender.zone/job/EssentialsX/lastSuccessfulBuild/artifact/jars/EssentialsX-2.19.0-dev+99-1e0d7fb.jar"}
   - { name: "Essential Antibuild", url: "https://ci.ender.zone/job/EssentialsX/lastSuccessfulBuild/artifact/jars/EssentialsXAntiBuild-2.19.0-dev+99-1e0d7fb.jar"}
   - { name: "Essential Protect", url: "https://ci.ender.zone/job/EssentialsX/lastSuccessfulBuild/artifact/jars/EssentialsXProtect-2.19.0-dev+99-1e0d7fb.jar"}
+  - { name: "LuckPerms", url: "https://ci.lucko.me/job/LuckPerms/1314/artifact/bukkit/loader/build/libs/LuckPerms-Bukkit-5.3.16.jar"}
 
 Copy_Plugins:
   - { name: "Essential Chat", path: "EssentialsXChat.jar"}
