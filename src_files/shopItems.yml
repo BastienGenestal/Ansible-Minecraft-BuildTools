@@ -4,7 +4,7 @@ Items:
     Price: 10000.0
     Icon:
       # (REQUIRED) Icon item
-      Id: diamond_pickaxe
+      Id: netherite_pickaxe
       # (Optional - Default: 1) Icon item amount
       Amount: 1
       # (Optional) Icon name. Supports usual color codes
@@ -13,7 +13,6 @@ Items:
       Lore:
       - "&6Efficiency V"
       - "&6Unbreaking III"
-      - "&eAnd one tasty apple!"
       # (Optional - default: false) Hides icon if player don't have permission to get this item
       HideWithoutPermission: true
       # (Optional - default: false) Hides icon if player don't have enough point levels to get this icon
@@ -43,7 +42,7 @@ Items:
       # Can be any word
       PickAxe:
         # (Required) Item name
-        Id: diamond_pickaxe
+        Id: netherite_pickaxe
         # (Optional - Default: 1) Item amount
         Amount: 1
         # (Optional) Item name
@@ -53,17 +52,13 @@ Items:
         - "&eUber pickAxe"
         # (Optional) Item enchants
         Enchants:
-        - DIG_SPEED=10
-        - DURABILITY=5
+        - DIG_SPEED=5
+        - DURABILITY=3
       Giving-Potion:
         Id: potion
         Amount: 1
         Name: "&6Jump boost"
         potion-type: jump
-      # Can be any word
-      Apple:
-        # (Required) Item name
-        Id: apple
   WoodenShovel:
     Price: 100.0
     Icon:
@@ -84,7 +79,7 @@ Items:
       - "&eContains Lure 3 enchant"
       HideWithoutPermission: true
     RequiredJobLevels:
-    - Fisherman-100
+    - Fisherman-50
     PerformCommands:
     - "msg &eThanks [player] for buying this book!"
     GiveItems:
@@ -104,3 +99,20 @@ Items:
     GiveItems:
       Elytra:
         Id: elytra
+  Sword:
+    Price: 10000.0
+    Icon:
+      Id: sword
+      Amount: 1
+      Name: "&eOP SWORD"
+      Lore:
+        - "&6Sharpness 10"
+        - "&6Knockback V"
+        - "&cCursed"
+    RequiredJobLevels:
+    - Hunter-150
+    - Enchanter-75
+    - Weaponsmith-50
+    PerformCommands:
+    - "msg &eThanks [player] for buying OP SWORD!"
+    - 'give [player] netherite_sword 1 {enchantments:[{id:"minecraft:knockback",lvl:5s"},{id:"minecraft:sharpness",lvl:10s"},{id:"minecraft:vanishing_curse",lvl:1s"}]}'
