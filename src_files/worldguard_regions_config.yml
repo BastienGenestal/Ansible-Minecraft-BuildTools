@@ -130,7 +130,7 @@ regions:
           heal-amount: 0,
           feed-delay: 0,
           feed-amount: 0,
-          greeting-title: §rWarzone,
+          greeting-title: §cWarzone,
           farewell-title: §2Wilderness,
         }
         owners: {}
