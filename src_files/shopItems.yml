@@ -102,7 +102,7 @@ Items:
   Sword:
     Price: 10000.0
     Icon:
-      Id: sword
+      Id: netherite_sword
       Amount: 1
       Name: "&eOP SWORD"
       Lore:
