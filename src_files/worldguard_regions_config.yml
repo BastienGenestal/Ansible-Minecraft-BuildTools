@@ -75,13 +75,14 @@ regions:
         type: cuboid
         priority: 0
     warzone:
-        min: {x: 82, y: 0, z: 2}
-        max: {x: 123, y: 255, z: 37}
+        min: {x: 72, y: 0, z: -8}
+        max: {x: 133, y: 255, z: 47}
         members: {}
         flags: {
           enderpearl: deny,
           pvp: allow,
           mob-damage: allow,
+          mob-spawning: deny,
           ghast-fireball: allow,
           fire-spread: deny,
           enderman-grief: deny,
@@ -129,7 +130,7 @@ regions:
           heal-amount: 0,
           feed-delay: 0,
           feed-amount: 0,
-          greeting-title: §3Spawn,
+          greeting-title: §rWarzone,
           farewell-title: §2Wilderness,
         }
         owners: {}
