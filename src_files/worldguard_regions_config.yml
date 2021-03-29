@@ -44,7 +44,7 @@ regions:
           crop-growth: deny,
           soil-dry: deny,
           coral-fade: deny,
-          pistons: deny,
+          pistons: allow,
           build: deny,
           interact: allow,
           block-break: deny,
