@@ -108,7 +108,7 @@ DailyQuests:
   Skips: 1
   # The cost of the quest skip (money).
   # Default 0, disabling cost of skipping quest.
-  SkipQuestCost: 0.0
+  SkipQuestCost: 5.0
 # Enables the schedule manager to boost the server.
 ScheduleManager:
   Use: true
@@ -120,7 +120,7 @@ JobExpirationTime: 0
 # Maximum number of jobs a player can join.
 # Use 0 for no maximum
 # Keep in mind that jobs.max.[amount] will bypass this setting
-max-jobs: 2
+max-jobs: 3
 # Disabling the payment if the user reached the maximum level of a job.
 disable-payment-if-max-level-reached: false
 # Hide jobs from player if they lack the permission to join the job

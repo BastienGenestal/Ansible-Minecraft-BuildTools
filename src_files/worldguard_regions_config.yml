@@ -13,7 +13,7 @@
 regions:
     spawn:
         min: {x: -27, y: 0, z: -9}
-        max: {x: 63, y: 255, z: 81}
+        max: {x: 71, y: 255, z: 81}
         members: {}
         flags: {
           pvp: deny,

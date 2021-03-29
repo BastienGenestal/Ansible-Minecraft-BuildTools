@@ -14,7 +14,7 @@ kits:
   Start:
     delay: 604800
     items:
-    - wooden_sword 1 loot_bonus_mobs:1
+    - iron_sword 1 loot_bonus_mobs:1
     - iron_pickaxe 1
     - iron_axe 1
     - iron_shovel 1
