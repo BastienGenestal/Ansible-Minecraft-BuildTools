@@ -16,6 +16,8 @@ Copy_Plugins:
   - { name: "Vault", path: "Vault.jar"}
   - { name: "Jobs", path: "Jobs.jar" }
   - { name: "ChestShop", path: "ChestShop.jar"}
+  - { name: "UnclaimFinder", path: "UF.jar"}
+  - { name: "Scoreboard-revision", path: "Scoreboard-revision.jar"}
 
 
 
