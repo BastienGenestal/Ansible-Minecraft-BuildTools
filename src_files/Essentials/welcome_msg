@@ -12,4 +12,8 @@
 &a /spawn - safezone, you can visit or go shopping
 &a /warp arena - teleports you to the arena
 &7 ------------------------
+&7 ------------------------
+&a /kit start - Just take it !
+&a /kits - Shows all the kits you can get
+&7 ------------------------
 &6Players online:&c {ONLINE} &6- World time:&c {WORLDTIME12}
