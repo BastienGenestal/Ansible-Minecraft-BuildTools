@@ -77,7 +77,7 @@
 
 - name: Copy the eula.txt file
   ansible.builtin.copy:
-    src: "src_files/eula.txt"
+    src: "src_files/Server/eula.txt"
     dest:  "{{ working_dir }}/eula.txt"
     owner: root
     group: root
