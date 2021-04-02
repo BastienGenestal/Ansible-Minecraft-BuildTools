@@ -57,7 +57,7 @@ crafts:
 # Blocks percentages
 block-percentages:
  torch: 3
- cobblestone: 4
+ cobblestone: 3
  obsidian:
  bed: 4
  workbench: 4
