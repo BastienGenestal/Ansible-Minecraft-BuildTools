@@ -90,10 +90,10 @@ Logging:
 broadcast:
   on-skill-up:
     # Do all players get a message when someone goes up a skill level?
-    use: false
+    use: true
   on-level-up:
     # Do all players get a message when someone goes up a level?
-    use: false
+    use: true
     # For what levels you want to broadcast message? Keep it at 0 if you want for all of them
     levels:
     - 0

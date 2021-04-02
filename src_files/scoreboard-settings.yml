@@ -57,7 +57,3 @@ board:
       interval: 0
       lines:
         - '%server_online% &7online players'
-    8:
-      interval: 0
-      lines:
-        - '%server_ram_used%mb/%server_ram_total%mb &7ram usage'
