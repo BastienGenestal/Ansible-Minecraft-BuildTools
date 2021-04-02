@@ -2,50 +2,60 @@
 
 - name: Copy the essentials config.yml file
   ansible.builtin.copy:
-    src: "src_files/essantials_config.yml"
+    src: "src_files/Essentials/essantials_config.yml"
     dest: "{{ working_dir }}/plugins/Essentials/config.yml"
 
 - name: Copy the jobs config.yml file
   ansible.builtin.copy:
-    src: "src_files/jobs_config.yml"
+    src: "src_files/Jobs/jobs_config.yml"
     dest: "{{ working_dir }}/plugins/Jobs/generalConfig.yml"
 
 - name: Copy the jobs shop items file
   ansible.builtin.copy:
-    src: "src_files/shopItems.yml"
+    src: "src_files/Jobs/shopItems.yml"
     dest: "{{ working_dir }}/plugins/Jobs/shopItems.yml"
 
 - name: Copy the worldguard regions config.yml file
   ansible.builtin.copy:
-    src: "src_files/worldguard_regions_config.yml"
+    src: "src_files/World/worldguard_regions_config.yml"
     dest: "{{ working_dir }}/plugins/WorldGuard/worlds/world/regions.yml"
 
 - name: Copy the Luckperms config.yml file
   ansible.builtin.copy:
-    src: "src_files/luckperms_config.yml"
+    src: "src_files/LuckPerms/luckperms_config.yml"
     dest: "{{ working_dir }}/plugins/LuckPerms/config.yml"
 
 - name: Copy the Kits file
   ansible.builtin.copy:
-    src: "src_files/kits.yml"
+    src: "src_files/Essentials/kits.yml"
     dest: "{{ working_dir }}/plugins/Essentials/kits.yml"
 
 - name: Copy the spawn file
   ansible.builtin.copy:
-    src: "src_files/spawn.yml"
+    src: "src_files/Essentials/spawn.yml"
     dest: "{{ working_dir }}/plugins/Essentials/spawn.yml"
+
+- name: Copy the Welcome message file
+  ansible.builtin.copy:
+    src: "src_files/Essentials/welcome_msg"
+    dest: "{{ working_dir }}/plugins/Essentials/motd.txt"
+
+- name: Copy the Unclaim finder file
+  ansible.builtin.copy:
+    src: "src_files/UnclaimFinder/unclaim_finder.yml"
+    dest: "{{ working_dir }}/plugins/UnclaimFinder/items/unclaim_finder.yml"
 
 - name: Copy the server.properties file
   ansible.builtin.copy:
-    src: "src_files/server.properties"
+    src: "src_files/Server/server.properties"
     dest: "{{ working_dir }}/server.properties"
 
 - name: Copy the server pp file
   ansible.builtin.copy:
-    src: "src_files/server_pp"
+    src: "src_files/Server/server_pp"
     dest: "{{ working_dir }}/server-icon.png"
 
 - name: Copy the server permissions file
   ansible.builtin.copy:
-    src: "src_files/permissions.yml"
+    src: "src_files/Server/permissions.yml"
     dest: "{{ working_dir }}/permissions.yml"

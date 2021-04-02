@@ -1,0 +1,82 @@
+# A radius too high may cause lag, interval advisable: [0 - 64]
+range-radius: 12
+# Durability 0 = Unbreakable
+durability: 7734
+
+# Data
+# Use https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html to get items name
+item: compass
+display-name: "&6&lUnclaim Finder"
+lore:
+- "&cUse to see"
+- "&cpercentage to get"
+- "&ca nearby base"
+
+# Use it to whitelist a world
+world-whitelist: false
+white-worlds:
+- world
+
+# Use it to blacklist a world
+world-blacklist: false
+black-worlds:
+- world
+
+# If both whitelist & blacklist are activated, the whitelist will override
+
+# Custom craft
+# Please put air to set item to none
+crafts:
+ recipe:
+  slot0: diamond_block
+  slot1: netherite_ingot
+  slot2: diamond_block
+  slot3: netherite_ingot
+  slot4: nether_star
+  slot5: netherite_ingot
+  slot6: diamond_block
+  slot7: netherite_ingot
+  slot8: diamond_block
+ recipe2:
+  slot0: netherite_ingot
+  slot1: diamond_block
+  slot2: netherite_ingot
+  slot3: diamond_block
+  slot4: nether_star
+  slot5: diamond_block
+  slot6: netherite_ingot
+  slot7: diamond_block
+  slot8: netherite_ingot
+
+
+
+# Use to change values of blocks
+# More you put inside, more it will make the server load and lag
+# Use https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html to get blocks name
+
+# Blocks percentages
+block-percentages:
+ torch: 3
+ cobblestone: 4
+ obsidian:
+ bed: 4
+ workbench: 4
+ furnace: 4
+ wooden_door: 4
+ iron_door: 5
+ trapped_chest: 6
+ portal: 6
+ glass: 6
+ glass_pane: 6
+ anvil: 8
+ chest: 8
+ lantern: 8
+ dropper: 10
+ dispenser: 10
+ observer: 10
+ hopper: 10
+ cauldron: 10
+ jukebox: 15
+ enchanting_table: 15
+ brewing_stand: 15
+ ender_chest: 15
