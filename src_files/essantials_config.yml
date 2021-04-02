@@ -319,7 +319,7 @@ player-commands:
 # This is useful if you want superperms-based permissions (with wildcards) for custom permissions plugins.
 # If you wish to use EssentialsX's built-in permissions using the `player-commands` section above, set this to false.
 # Default is true.
-use-bukkit-permissions: true
+use-bukkit-permissions: false
 
 # When this option is enabled, one-time use kits (ie. delay < 0) will be
 # removed from the /kit list when a player can no longer use it
@@ -341,30 +341,30 @@ pastebin-createkit: false
 # Color is not an actual sign, it's for enabling using color codes on signs, when the correct permissions are given.
 
 enabledSigns:
-  #- color
-  #- balance
-  #- buy
-  #- sell
-  #- trade
-  #- free
-  #- warp
-  #- kit
-  #- mail
-  #- enchant
-  #- gamemode
-  #- heal
-  #- info
-  #- spawnmob
-  #- repair
-  #- time
-  #- weather
-  #- anvil
-  #- cartography
-  #- disposal
-  #- grindstone
-  #- loom
-  #- smithing
-  #- workbench
+  - color
+  - balance
+  - buy
+  - sell
+  - trade
+  - free
+  - warp
+  - kit
+  - mail
+  - enchant
+  - gamemode
+  - heal
+  - info
+  - spawnmob
+  - repair
+  - time
+  - weather
+  - anvil
+  - cartography
+  - disposal
+  - grindstone
+  - loom
+  - smithing
+  - workbench
 
 # How many times per second can Essentials signs be interacted with per player.
 # Values should be between 1-20, 20 being virtually no lag protection.
