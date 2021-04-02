@@ -1,12 +1,12 @@
 # A radius too high may cause lag, interval advisable: [0 - 64]
-range-radius: 12
+range-radius: 64
 # Durability 0 = Unbreakable
 durability: 7734
 
 # Data
 # Use https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html to get items name
 item: compass
-display-name: "&6&lUnclaim Finder"
+display-name: "&6&lBase Finder"
 lore:
 - "&cUse to see"
 - "&cpercentage to get"
