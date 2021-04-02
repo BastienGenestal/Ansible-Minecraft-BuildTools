@@ -120,7 +120,7 @@ JobExpirationTime: 0
 # Maximum number of jobs a player can join.
 # Use 0 for no maximum
 # Keep in mind that jobs.max.[amount] will bypass this setting
-max-jobs: 3
+max-jobs: 5
 # Disabling the payment if the user reached the maximum level of a job.
 disable-payment-if-max-level-reached: false
 # Hide jobs from player if they lack the permission to join the job
@@ -135,7 +135,7 @@ enable-pay-creative: false
 # Option to allow payment to be made for exploring when player flies
 enable-pay-for-exploring-when-flying: false
 # Option to allow payment to be made for exploring when player gliding.
-enable-pay-for-exploring-when-gliding: false
+enable-pay-for-exploring-when-gliding: true
 # Disables the payment when the player riding on an entity.
 disablePaymentIfRiding: false
 # Adds the Jobs xp received to the player's Minecraft XP bar

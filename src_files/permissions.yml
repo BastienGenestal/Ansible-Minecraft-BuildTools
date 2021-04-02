@@ -30,6 +30,7 @@ groups:
     - essentials.help
     - essentials.sell.hand
     - essentials.warps
+    - jobs.max.5
   Admin:
     permissions:
     - essentials.give
