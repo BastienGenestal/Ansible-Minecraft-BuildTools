@@ -1,5 +1,5 @@
 # A radius too high may cause lag, interval advisable: [0 - 64]
-range-radius: 32
+range-radius: 24
 # Durability 0 = Unbreakable
 durability: 7734
 
@@ -56,9 +56,6 @@ crafts:
 
 # Blocks percentages
 block-percentages:
- torch: 3
- cobblestone: 3
- obsidian:
  bed: 4
  workbench: 4
  furnace: 4
