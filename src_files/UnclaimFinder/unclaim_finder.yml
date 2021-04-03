@@ -1,5 +1,5 @@
 # A radius too high may cause lag, interval advisable: [0 - 64]
-range-radius: 64
+range-radius: 32
 # Durability 0 = Unbreakable
 durability: 7734
 
